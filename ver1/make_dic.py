@@ -10,7 +10,7 @@ c = conn.cursor()
 # read csv file
 def make_dic():
     # read csv file
-    f = open("text.csv", "r")
+    f = open("mecab_div/text.csv", "r")
     src = f.read()
     word_list = src.split(",")
 
