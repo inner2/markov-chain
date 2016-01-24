@@ -7,6 +7,6 @@ conn = sqlite3.connect('markov.db')
 c = conn.cursor()
 
 # Create database table
-c.execute("create table stocks(word1, word2)")
+c.execute("create table stocks(word1, word2, word3)")
 
 conn.close()

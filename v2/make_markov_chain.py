@@ -35,7 +35,7 @@ def make_markov():
         for word in word_list:
             if w1 and w2:
                 c.execute("insert into stocks values(?, ?, ?)", (w1, w2, word))
-                print("insert data", w1, w2, word)
+                # print("insert data", w1, w2, word)
             w1, w2 = w2, word
 
     # save database

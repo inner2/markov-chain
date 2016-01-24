@@ -1,8 +1,11 @@
-# link
+# 参考ページなど
 
 ## mecab を実行
 [コマンドでmecabを実行](http://logic.moo.jp/data/archives/322.html)
 
+```
+$ chmod u+x hello.sh
+```
 
 ## コマンドの実行
 [python3 - subprocess](http://docs.python.jp/3.5/library/subprocess.html)

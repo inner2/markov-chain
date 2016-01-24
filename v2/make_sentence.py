@@ -3,7 +3,7 @@
 import sqlite3
 
 # Connect database
-conn = sqlite3.connect('mecab/markov.db')
+conn = sqlite3.connect('markov.db')
 c = conn.cursor()
 
 
@@ -15,7 +15,6 @@ def create_sentence():
     w1 = list1[0][0]
     w2 = list1[0][1]
     sentence += w1 + w2
-    print(sentence)
 
     for i in range(20):
         try:
@@ -23,10 +22,10 @@ def create_sentence():
             list2 = c.fetchall()
             w1, w2 = w2, list2[0][2]
             sentence += list2[0][2]
-            print(i, list2)
+            # print(i, list2)
 
         except:
-            print("error")
+            # print("error")
             break
     return sentence
 
